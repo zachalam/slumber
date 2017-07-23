@@ -123,10 +123,10 @@ const int SLEEP_DATA[SLEEPING_PATTERNS][SLEEPING_PATTERN_EXAMPLES][PATTERN_SAMPL
 // https://www.arduino.cc/en/Reference/CurieBLE
 
 BLEPeripheral blePeripheral;  
-BLEService slumberService("180F"); 
+BLEService slumberService("fc0bfee2-5a23-11e7-907b-a6006ad3dba0"); 
 
 // READ ONLY "movement detected"
-BLEUnsignedCharCharacteristic movementChar("180F", BLERead | BLENotify);
+BLEUnsignedCharCharacteristic movementChar("fc0bfee2-5a23-11e7-907b-a6006ad3dba0", BLERead | BLENotify);
 
 
 void setup() {
