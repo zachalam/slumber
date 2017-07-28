@@ -6,7 +6,7 @@
                   a more informed nights sleep.
   Author:         Zach Alam
   Release Date:   28 June 2017
-  Revision Date:  23 July 2017
+  Revision Date:  28 July 2017
   Version:        1.2
   ----
   Made with <3 by Zach Alam in Las Vegas, Nevada!
@@ -15,7 +15,7 @@
 #include <CurieIMU.h>       // Gyroscope LIB
 #include <CurieBLE.h>       // BluetoothLE LIB
 
-
+// this is the PIN for the LED heart.
 const int LED_PIN = 9;    // LED connected to digital pin 9 (with PWM)
 
 // when DEBUG_MODE is true, logs are enabled.
@@ -36,8 +36,8 @@ const int PATTERN_TOSSING_TURNING = 4;
 const String PATTERN_NAMES[SLEEPING_PATTERNS] = {"No Movement", "Gentle Movement", 
 "Head Movement", "Restless Body", "Tossing & Turning"};
 
-const int PATTERN_MATCH_THRESHHOLD = 50;     // x percent matching threshold.
-const int MATCHES_REQUIRED = 1; // max num: 5, signals the pattern matched.
+const int PATTERN_MATCH_THRESHHOLD = 50;     // matching threshold.
+const int MATCHES_REQUIRED = 2; // max num: 5, signals the pattern matched.
 
 // the sleepMatrix is a 2d array that analyzes a 500ms
 // period of sleep for specific sleep patterns.
